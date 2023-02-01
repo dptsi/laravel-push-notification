@@ -21,13 +21,13 @@ composer require dptsi/laravel-push-notification
 
 **Copy Config**
 
-Run `php artisan vendor:publish --provider="Dptsi\PushNotification\Providers\PushNotificationServiceProvider"` to publish the `larafirebase.php` config file.
+Run `php artisan vendor:publish --provider="Dptsi\PushNotification\Providers\PushNotificationServiceProvider"` to publish the `pushnotification.php` config file.
 
 **Get Athentication Key**
 
 Get Authentication Key from https://console.firebase.google.com/
 
-**Configure larafirebase.php as needed**
+**Configure pushnotification.php as needed**
 
 ```
 'authentication_key' => '{AUTHENTICATION_KEY}'
@@ -114,7 +114,7 @@ class SendBirthdayReminder extends Notification
 
 ### Tips
 - Check example how to receive messages or push notifications in a [JavaScript client](/javascript-client).
-- You can use `larafirebase()` helper instead of Facade.
+- You can use `pushnotification()` helper instead of Facade.
 
 
 ### Payload
